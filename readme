@@ -1,0 +1,6 @@
+how to use
+===========
+place the zip file containing the csv files in the same folder where the python script "assignment_script" resides.
+execute the script and verifty the content of combined.csv file.
+The script will remove the extacted folder after completion of the process so no need to remove the folder manually.
+The script can be executed multiple time as it creates a new file on each execution.
