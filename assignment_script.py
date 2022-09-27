@@ -51,7 +51,7 @@ def process(filename):
         shutil.rmtree(targetdirname)
 
     except Exception as e:
-        print (f"Failure {str(e)}")
+        print (f"Failure With Error :{str(e)}")
 
 if __name__ == "__main__":
 
