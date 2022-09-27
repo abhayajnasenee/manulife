@@ -30,15 +30,12 @@ def process(filename):
             print(os.listdir(targetdirname))
 
             filenamewithpath = f"{targetdirname}/{file}"
-            # print(filenamewithpath)
             #forming the environment variable from the filename
             env_name = ' '.join([i for i in file.replace('.csv', '').split(' ') if i.isalpha()])
-            # print(f"hello {[i for i in file.replace('.csv', '').split(' ') if i.isalpha()]}")
             print (f"envionment name  is {env_name} for the file {file}")
             with open (filenamewithpath, 'r') as csvfile:
                 reader = csv.reader(csvfile)
                 data = list(reader)
-                # print(data)
                 iplst = list(set([row[0] for row in data[1:]]))
                 finaldata = [ [ip,env_name] for ip in iplst ]
                 consolidated_data.extend(finaldata)
