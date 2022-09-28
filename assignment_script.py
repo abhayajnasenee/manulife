@@ -27,7 +27,6 @@ def process(filename):
         consolidated_data = []
 
         for file in os.listdir(targetdirname):
-            print(os.listdir(targetdirname))
 
             filenamewithpath = f"{targetdirname}/{file}"
             #forming the environment variable from the filename
